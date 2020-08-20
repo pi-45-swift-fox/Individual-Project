@@ -22,6 +22,7 @@
 // @ is an alias to /src
 import io from 'socket.io-client';
 import CardGroup from '../components/CardGroup.vue';
+import swal from 'sweetalert2';
 
 export default {
   name: 'Home',
@@ -34,7 +35,14 @@ export default {
     }
   },
   mounted() {
-    this.socket = io.connect('http://localhost:3000');
+    const Toast = swal.mixin({
+    toast: true,
+    position: 'center',
+    showConfirmButton: false,
+    timer: 1500,
+    });
+
+    this.socket = io.connect('http://localhost:3000'/*'https://spend-arnolds-money.firebaseio.com/'*/);
 
     this.socket.on('init', (payload) => {
       console.log(payload.msg);
@@ -44,9 +52,16 @@ export default {
     });
     this.socket.on('fail', (reason) => {
       if (reason === 'money') {
-        console.log('cukup, dompet arnold habis');
+        Toast.fire({
+          icon: 'warning',
+          title: 'Insufficient money'
+        });
       } else if (reason === 'stock') {
-        console.log('ada uang tak ada barang');
+        Toast.fire({
+          icon: 'warning',
+          title: 'Empty stock'
+        });
+        
       } else {
         console.log(reason);
       }
