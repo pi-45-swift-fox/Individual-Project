@@ -12,7 +12,7 @@ io.on('connection', socket => {
             if (game.money > product[0].price) {
                 game.money -= product[0].price;
                 game.products[product[0].id-1].stock--;
-                socket.emit('game', game);
+                io.emit('game', game);
             } else {
                 socket.emit('fail', 'money');
             }
