@@ -49,7 +49,7 @@ const products = [
     },
     {
         id: 7,
-        title: 'Air Jordan',
+        title: 'Airpods',
         price: 1800000,
         stock: 52,
         image_url: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
