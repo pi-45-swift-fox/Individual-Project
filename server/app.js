@@ -64,7 +64,7 @@ const products = [
     {
         id: 9,
         title: 'Rolex Watch',
-        price: 18000000,
+        price: 99000000,
         stock: 35,
         image_url: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60'
     },
