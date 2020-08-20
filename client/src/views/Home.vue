@@ -31,7 +31,7 @@ export default {
     Cards
   },
   mounted () {
-    this.socket = io.connect('http://localhost:3000')
+    this.socket = io.connect('https://individual-project-phase-02.herokuapp.com/')
     this.socket.on('fetchData', ({ data, money }) => {
       this.$store.state.products = data
       this.$store.state.money = money
