@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #fce1e0;
+  background-color: cadetblue;
 }
 
 </style>

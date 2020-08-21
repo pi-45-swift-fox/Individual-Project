@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .card-container {
     display: grid;
@@ -53,13 +54,13 @@ img {
 }
 
 #cont-image {
-  background-color: aliceblue;
+  background-color: fce1e0;
   padding: 20px;
   margin-bottom: 10px;
 }
 
 #card-p {
-  background-color: antiquewhite;
+  background-color: white;
   margin-top: 10px;
   padding: 20px;
 }
