@@ -7,7 +7,7 @@
       <h1 class="text text-white">Spend Arnold's Money</h1>
       <div class="">
         <h5 class="text text-white">Your Money:</h5>
-        <h5 class="text text-white">Rp. {{ $store.state.money }} </h5>
+        <h5 class="text text-white">Rp. {{ $store.state.money.toLocaleString() }} </h5>
       </div>
     </nav>
     <div class="row">
