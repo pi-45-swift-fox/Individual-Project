@@ -1,0 +1,53 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"YAMAAP JS KING",
+            "price":15000000,
+            "stock":5,
+            "image_url":"https://asset.kompas.com/crops/Y4hUM0eBFhw0O3jKhqZgLQ5Dskk=/0x0:887x591/750x500/data/photo/2020/02/27/5e57d3450d2d2.jpg"
+        },
+        {
+            "id":2,
+            "name":"RONDA SUPAR X",
+            "price": 12000000,
+            "stock":10,
+            "image_url":"https://i2.wp.com/setia1heri.com/wp-content/uploads/2019/09/Kumpulan-foto-modif-Honda-Supra-X-brosis-6.jpg?fit=640%2C360&ssl=1"
+        },
+        {
+            "id":3,
+            "name":"BAZUKI AYESUKA 1000 CC",
+            "price":200000000,
+            "stock":3,
+            "image_url":"https://cdnmedia.endeavorsuite.com/images/ThumbGenerator/Thumb.aspx?img=https://cdnmedia.endeavorsuite.com/images/catalogs/15793/products/detail/7546da29-e005-4374-8092-0571f6c6fa9d.jpg&mh=378&mw=596&f=1&fz=1"
+        },
+        {
+            "id":4,
+            "name":"RONDA MIAUW",
+            "price":20000000,
+            "stock":10,
+            "image_url":"https://www.otomaniac.com/wp-content/uploads/2018/09/Gambar-Modifikasi-Motor-Yamaha-Mio-Thailook.jpg"
+        },
+        {
+            "id":5,
+            "name":"RONDA ASTRI YA",
+            "price":12000000,
+            "stock":5,
+            "image_url":"https://1.bp.blogspot.com/-d5tkj9NBwcM/Xhg9I15Nh1I/AAAAAAAAOb4/tSGwyAYw5zUdXRJsetibMM0Kg9Ds7jvlgCLcBGAsYHQ/s640/20200110_155941.jpg"
+        },
+        {
+            "id":6,
+            "name":"SERAHLU IMPREZA",
+            "price":500000000000,
+            "stock":1,
+            "image_url":"https://www.skyinsurance.co.uk/blog/wp-content/uploads/2019/02/Subaru-Impreza-WRX-S.png"
+        },
+        {
+            "id":7,
+            "name":"BUPATI PERON GT",
+            "price":700000000000,
+            "stock":1,
+            "image_url":"https://cdn1-production-images-kly.akamaized.net/9hOyqoAzkyTjFzJoew7cYbnIIFE=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/714297/original/20163216111379966983.jpg"
+        }
+    ]
+}
