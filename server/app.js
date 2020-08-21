@@ -18,14 +18,12 @@ io.on('connection', socket => {
       items = payload.items;
     }
     io.emit('get-data', {money, items})
-    console.log(money, '<<<<< socket test')
   })
 
   socket.on('buy-item', payload => {
     money = payload.money;
     items = payload.items;
     io.emit('get-data', {money, items})
-    console.log(money);
   })
 });
 

@@ -119,12 +119,10 @@ export default new Vuex.Store({
       if (state.summary[state.items[index].name]) {
         state.summary[state.items[index].name].total++
         state.summary[state.items[index].name].sum += state.items[index].price
-        console.log('masuk tambah summaryy', state.summary)
       } else {
         state.summary[state.items[index].name] = {}
         state.summary[state.items[index].name].total = 1
         state.summary[state.items[index].name].sum = state.items[index].price
-        console.log('masuk bikin summaryy', state.summary)
       }
 
       socket.emit('buy-item', { items: state.items, money: state.money })
