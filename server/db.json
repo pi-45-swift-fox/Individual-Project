@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "GTA San Andreas",
+        "price": 500000,
+        "genre": "Adventure",
+        "imageUrl": "https://i2.wp.com/www.gimbot.com/wp-content/uploads/2019/10/alasan-gta-san-andreas-susah-dilupakan-featured.jpg?w=1200&ssl=1",
+        "stock": 10
+    },
+    {
+        "id": 2,
+        "name": "PES 2020",
+        "price": 600000,
+        "genre": "Sports",
+        "imageUrl": "https://steamcdn-a.akamaihd.net/steam/apps/996470/header.jpg?t=1580410148",
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "name": "FIFA 2020",
+        "price": 550000,
+        "genre": "Sports",
+        "imageUrl": "https://www.fifplay.com/img/public/fifa-20-article.jpg",
+        "stock": 15
+    },
+    {
+        "id": 4,
+        "name": "GOD OF WAR",
+        "price": 700000,
+        "genre": "Adventure",
+        "imageUrl": "https://d1pqlgpcx1bu0k.cloudfront.net/static/img/GOW-OG-image.jpg",
+        "stock": 30
+    },
+    {
+        "id": 5,
+        "name": "RESIDENT EVIL",
+        "price": 750000,
+        "genre": "Adventure",
+        "imageUrl": "https://www.residentevil.com/_asset/images/resistance-panel.jpg",
+        "stock": 25
+    },
+    {
+        "id": 6,
+        "name": "NFS HEAT",
+        "price": 650000,
+        "genre": "Sports",
+        "imageUrl": "https://ecs7.tokopedia.net/img/cache/700/product-1/2019/12/30/68049759/68049759_26cce3af-aca0-4119-93ff-6a3a6453565b_2048_2048",
+        "stock": 10
+    },
+    {
+        "id": 7,
+        "name": "CALL OF DUTY",
+        "price": 750000,
+        "genre": "RPG",
+        "imageUrl": "https://metro.co.uk/wp-content/uploads/2019/05/Screenshot_4-46c3.jpg?quality=90&strip=all",
+        "stock": 18
+    },
+    {
+        "id": 8,
+        "name": "WATCH DOGS",
+        "price": 800000,
+        "genre": "RPG",
+        "imageUrl": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/2/25/28386484/28386484_cd0ed3f4-343d-4b26-8e23-3f18ab69ad83_560_698.jpg",
+        "stock": 40
+    },
+    {
+        "id": 9,
+        "name": "THE CREW 2",
+        "price": 850000,
+        "genre": "Sports",
+        "imageUrl": "https://store-images.s-microsoft.com/image/apps.27780.70638597071363675.a8b8016e-27e4-4fcc-adfb-38034a85d956.a96a4e55-aeb6-4692-8c0f-45e300f2a552",
+        "stock": 48
+    },
+    {
+        "id": 10,
+        "name": "THE CREW 2",
+        "price": 850000,
+        "genre": "Sports",
+        "imageUrl": "https://store-images.s-microsoft.com/image/apps.27780.70638597071363675.a8b8016e-27e4-4fcc-adfb-38034a85d956.a96a4e55-aeb6-4692-8c0f-45e300f2a552",
+        "stock": 48
+    },
+    {
+        "id": 11,
+        "name": "THE CREW 2",
+        "price": 850000,
+        "genre": "Sports",
+        "imageUrl": "https://store-images.s-microsoft.com/image/apps.27780.70638597071363675.a8b8016e-27e4-4fcc-adfb-38034a85d956.a96a4e55-aeb6-4692-8c0f-45e300f2a552",
+        "stock": 48
+    },
+    {
+        "id": 12,
+        "name": "THE CREW 2",
+        "price": 850000,
+        "genre": "Sports",
+        "imageUrl": "https://store-images.s-microsoft.com/image/apps.27780.70638597071363675.a8b8016e-27e4-4fcc-adfb-38034a85d956.a96a4e55-aeb6-4692-8c0f-45e300f2a552",
+        "stock": 48
+    }
+]
