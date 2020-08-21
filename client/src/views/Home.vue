@@ -33,7 +33,7 @@ export default {
     },
   },
   mounted() {
-    this.socket = io.connect('https://sheltered-meadow-92643.herokuapp.com/');
+    this.socket = io.connect('http://localhost:3000');
     this.socket.on('fetchData', ({ data, money }) => {
       this.$store.state.games = data;
       this.$store.state.money = money;
