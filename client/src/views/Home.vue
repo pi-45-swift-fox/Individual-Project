@@ -6,58 +6,25 @@
       <h1 class="font-weight-bold">Spend Mr. Arnold's Money</h1>
     </b-jumbotron>
     <b-navbar sticky="true" variant="warning" class="mt-0 justify-content-center">
-      <h3>Rp. {{ money.toLocaleString() }} left</h3>
+      <h3>Rp. {{ $store.state.money.toLocaleString() }} left</h3>
     </b-navbar>
     <b-row class="mt-1 d-flex flex-col">
-      <ProductCard v-for="(product, i) in products" :key="i" :product="product" @increment="increment" @spendMoney="spendMoney" :money="money"></ProductCard>
+      <ProductCard v-for="(product, i) in $store.state.products" :key="i" :product="product" @increment="increment" :money="money"></ProductCard>
     </b-row>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import io from 'socket.io-client'
 import ProductCard from '../components/ProductCard'
 
 export default {
   name: 'Home',
-  data () {
-    return {
-      products: [],
-      money: 0
-    }
-  },
   components: {
     ProductCard
   },
-  methods: {
-    increment (id) {
-      console.log(id)
-      this.socket.emit('new-message', { id: id })
-    },
-    spendMoney (id) {
-      this.socket.emit('new-money', { id: id })
-    }
-  },
   mounted () {
-    this.socket = io.connect('https://mr-arold-spend-money.herokuapp.com/')
-
-    // event listener
-    this.socket.on('init', (payload) => {
-      this.products = payload
-    })
-
-    this.socket.on('new-message', (payload) => {
-      this.products = payload
-    })
-
-    this.socket.on('init-money', payload => {
-      this.money = payload
-    })
-
-    this.socket.on('new-money', payload => {
-      this.money = payload
-    })
+    this.$store.commit('fetchProducts')
   }
 }
 </script>

@@ -9,7 +9,7 @@
       </b-card-text>
       <div class="input-group">
         <input type="text" disabled="disabled" style="height: 38px" :value="product.stock"/> &nbsp; &nbsp;
-        <div v-if="product.price <= money && product.stock > 0">
+        <div v-if="product.price <= $store.state.money && product.stock > 0">
         <b-button href="#" variant="warning" style="min-width:100px;" @click="kurangStock(product.id)">Buy</b-button>
         </div>
         <div v-else>
@@ -34,8 +34,8 @@ export default {
   },
   methods: {
     kurangStock (id) {
-      this.$emit('increment', id)
-      this.$emit('spendMoney', id)
+      this.$store.state.socket.emit('new-message', { id: id })
+
       const audio = new Howl({
         src: ['coinsfall.mp3'],
         html5: true,
@@ -44,6 +44,9 @@ export default {
       })
       audio.play()
     }
+  },
+  mounted () {
+    this.$store.commit('new-message')
   }
 }
 </script>
