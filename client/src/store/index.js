@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     products: [],
-    socket: io.connect('http://localhost:3000'),
+    socket: io.connect('https://stormy-crag-48203.herokuapp.com'),
     money: 0,
   },
   mutations: {

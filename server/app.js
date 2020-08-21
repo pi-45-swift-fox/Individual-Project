@@ -11,7 +11,7 @@ io.on('connect', (socket)=>{
     console.log('Socket.io client connected');
     socket.emit('products', {
         products,
-        money
+        money 
     })
 
     socket.on('newUpdate', (payload) => {
