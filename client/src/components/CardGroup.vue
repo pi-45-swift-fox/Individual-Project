@@ -18,7 +18,6 @@ export default {
   name: 'CardGroup',
   methods: {
     buy(id) {
-      // this.$store.dispatch('buy', id);
       this.$emit('buy', id);
     },
   },

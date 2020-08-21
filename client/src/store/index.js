@@ -17,9 +17,6 @@ export default new Vuex.Store({
   actions: {
     refresh({ commit }, game) {
       commit('set_game', game);
-    },
-    buy(id) {
-      this.socket.emit('buy', id);
     }
   },
   modules: {

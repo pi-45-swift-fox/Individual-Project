@@ -23,6 +23,8 @@
 import io from 'socket.io-client';
 import CardGroup from '../components/CardGroup.vue';
 import swal from 'sweetalert2';
+const buysfx = new Audio(require('../sfx/ef1.wav'));
+const failsfx = new Audio(require('../sfx/ef2.wav'));
 
 export default {
   name: 'Home',
@@ -31,6 +33,7 @@ export default {
   },
   methods: {
       buy(id) {
+        buysfx.play();
         this.socket.emit('buy', id);
     }
   },
@@ -42,7 +45,7 @@ export default {
     timer: 1500,
     });
 
-    this.socket = io.connect('http://localhost:3000'/*'https://spend-arnolds-money.firebaseio.com/'*/);
+    this.socket = io.connect('https://still-temple-89480.herokuapp.com/');
 
     this.socket.on('init', (payload) => {
       console.log(payload.msg);
@@ -51,6 +54,7 @@ export default {
       this.$store.dispatch('refresh', game);
     });
     this.socket.on('fail', (reason) => {
+      failsfx.play();
       if (reason === 'money') {
         Toast.fire({
           icon: 'warning',
@@ -61,7 +65,6 @@ export default {
           icon: 'warning',
           title: 'Empty stock'
         });
-        
       } else {
         console.log(reason);
       }
